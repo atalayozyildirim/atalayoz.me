@@ -60,12 +60,12 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D0A0ACBFB9114C9EBEEC2DDDF3E7886E }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7057B95D61384028A423BB0D6F32B066 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_27A54694130740048CE221BC8709694F }}
-
+          app_location : "src"
+          api_location : "api"
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'atalayoz'
-          slot-name: 'Production'
           package: .
           
