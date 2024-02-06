@@ -1,12 +1,11 @@
-import { SessionProvider } from "next-auth/react";
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import NextAuthProvider from "@/app/NextAuth";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SessionProvider>
-        <p>dsadasdasaRQWRWQRWQRQWR</p>
+    <NextAuthProvider>
       <Component {...pageProps} />
-    </SessionProvider>
+    </NextAuthProvider>
   );
 }
 

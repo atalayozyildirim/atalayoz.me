@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useSession } from "next-auth/react";
 import Navbar from "@/app/Components/Navbar";
+import Cookies from "js-cookie";
 import Image from "next/image";
 import Head from "next/head";
 import "../../../style/globals.css";
@@ -12,8 +13,13 @@ export default function About() {
   const [input, setInput] = useState("");
   const [content, setContent] = useState("");
 
+  const inputRef = useRef(null);
+  const textRef = useRef(null);
+
   const { data: session, status } = useSession();
-  const token = session?.accessToken;
+
+  const token = Cookies.get("next-auth.session-token");
+
   const createBlog = () => {
     toogle ? setToogle(false) : setToogle(true);
   };
@@ -23,7 +29,9 @@ export default function About() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        token: `Bearer ${token}`,
+        token: "`Bearer ${token}",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST",
       },
       cache: "force-cache",
       body: JSON.stringify({
@@ -35,7 +43,10 @@ export default function About() {
     });
     setContent("");
     setInput("");
-    const a = await res.json();
+    let a: any = inputRef.current;
+    let b: any = textRef.current;
+    a.value = "";
+    b.value = "";
   };
   return (
     <>
@@ -157,6 +168,7 @@ export default function About() {
                     <div>
                       <div className="mb-2 block">Title</div>
                       <input
+                        ref={inputRef}
                         id="small"
                         type="text"
                         className="w-full rounded-xl bg-transparent input text-black outline-none border-2 border-black p-2"
@@ -167,6 +179,7 @@ export default function About() {
                     <div>
                       <div className="mb-2 block">Content</div>
                       <textarea
+                        ref={textRef}
                         id="comment"
                         placeholder="Leave a comment..."
                         className="h-60 w-full outline-none rounded-xl bg-transparent text-black border-2 border-black p-2 resize-none"
