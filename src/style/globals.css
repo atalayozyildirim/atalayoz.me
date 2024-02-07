@@ -9,6 +9,7 @@
   --surface-color: #fff;
   --curve: 40;
 }
+
 .dot-1 {
   width: 15px;
   height: 15px;
@@ -22,6 +23,7 @@
   content: "";
 
 }
+
 @keyframes blinkCursor {
   50% {
     border-right-color: transparent;
@@ -29,19 +31,24 @@
 }
 
 @keyframes typeAndDelete {
+
   0%,
   10% {
     width: 0;
   }
+
   45%,
   55% {
     width: 6.2em;
-  } /* adjust width based on content */
+  }
+
+  /* adjust width based on content */
   90%,
   100% {
     width: 0;
   }
 }
+
 .terminal-loader {
   border: 0.1em solid #333;
   background-color: #1a1a1a;
@@ -102,13 +109,14 @@
   color: #eee;
 }
 
-.text-1{
+.text-1 {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.2em solid white; /* Cursor */
+  border-right: 0.2em solid white;
+  /* Cursor */
   animation: typeAndDelete 4s steps(11) infinite,
-  blinkCursor 0.5s step-end infinite alternate;
+    blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
 }
 
@@ -124,13 +132,16 @@
     height: 100%;
     justify-content: center;
   }
+
   .sm-text {
     width: 100%;
   }
- .ceren {
-   flex-direction: column;
-   flex-wrap: wrap;
- }
+
+  .ceren {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   body {
     background-color: #fff;
   }
@@ -149,6 +160,9 @@
 
   ._code_280132 {
     width: 100%;
+    position: relative;
+    top: -50px;
+
   }
 
   .text {
@@ -158,13 +172,20 @@
   }
 
   ._ResponsiveCard {
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
     flex-wrap: wrap;
     background-color: transparent;
     position: relative;
     transition: all 0.1s ease-in-out;
+  }
+
+  ._KADIKOYACIL {
+    width: 75%;
+    height: 100%;
+    position: relative;
+
   }
 
   .summer {
@@ -178,6 +199,18 @@
     height: 100%;
     flex-wrap: wrap;
     margin: 0px;
+  }
+
+  .NEBILEYIMBISEYISTEAQ {
+    position: absolute;
+    z-index: 1;
+    top: -10vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
   ._Code>ul>li {
@@ -206,13 +239,26 @@
     top: 8px;
   }
 
+  body {
+    background-color: #fff !important;
+    position: relative;
+  }
+
   .atalay {
     width: 100%;
     height: 100%;
     font-size: medium;
   }
 
+  .class-129210 {
+    display: none;
+  }
+
   div.sidebar:nth-child(4) {
+    display: none;
+  }
+
+  div.sidebar:nth-child(3) {
     display: none;
   }
 

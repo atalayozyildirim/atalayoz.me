@@ -8,20 +8,23 @@ export default function Home() {
     <>
       <Head>
         <title>Atalay Özyıldırım</title>
+        <meta name="description" content="About || Hakımda" />
       </Head>
-      <main className="flex flex-col min-h-screen items-center   justify-between p-8">
-        <div className="w-full h-auto relative flex justify-center font-mono">
-          <Navbar />
-        </div>
-        <div className="relative w-full h-full justify-center flex margin-auto place-items-center ">
-          <div className="w-full h-full">
-            <Content />
+      <div className="w-full h-14  absolute z-10  top-8 font-mono">
+        <Navbar />
+      </div>
+      <div className="min-h-screen  relative justify-center flex flex-col ">
+        <main className="flex flex-col  items-center NEBILEYIMBISEYISTEAQ  justify-center p-8">
+          <div className="relative w-full h-60 KADIKOYACIL  flex place-items-center ">
+            <div className="w-full h-96">
+              <Content />
+            </div>
           </div>
-        </div>
-        <div className="font-semibold text-center w">
+        </main>
+        <div className="font-semibold class-129210  absolute bottom-5 left-2  h-5 ">
           {String.fromCharCode(169)} Atalay Özyıldırım
         </div>
-      </main>
+      </div>
     </>
   );
 }
