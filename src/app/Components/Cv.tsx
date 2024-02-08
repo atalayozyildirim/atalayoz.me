@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Cv() {
   return (
-    <div className="relative 2xl:w-[680px]   _ResponsiveCard bg-[#12181f] rounded-xl h-80  top-5 -left-5 flex flex-col  font-semibold tracking-tight">
+    <div className="relative 2xl:w-[680px] xl:w-[680px] lg:w-[680px]   _ResponsiveCard bg-[#12181f] rounded-xl h-96  top-5 -left-5 flex flex-col  font-semibold tracking-tight">
       <div className="absolute ezhel">
         <div className="dot flex flex-row relative summer left-4 top-1  ">
           <span className="dot-1"></span>
@@ -10,7 +10,7 @@ export default function Cv() {
           <span className="dot-1"></span>
         </div>
         <div className="flex flex-row selam ce  w-full">
-          <div className="sidebar w-[100px] h-8 bg-[#20262e] relative left-5 top-2 p-2 rounded-md flex flex-row margin-2 place-content-center items-center text-white align-middle text-center">
+          <div className="sidebar w-[100px]  h-8 bg-[#20262e] relative left-5 top-2 p-2 rounded-md flex flex-row margin-2 place-content-center items-center text-white align-middle text-center">
             <Image
               src="/musk.png"
               width={25}
@@ -66,7 +66,7 @@ export default function Cv() {
             <span className="relative left-1">user.sql</span>
           </div>
         </div>
-        <div className="Number text-[#494c4f] _Code flex flex-col summer font-mono relative left-4 top-5 list-image-none">
+        <div className="Number text-[#494c4f]  _Code flex flex-col summer font-mono relative left-4 top-5 list-image-none">
           <ul className="atalay flex-grow">
             <li>
               <span>1</span>
@@ -129,10 +129,10 @@ export default function Cv() {
         </div>
         <div className="phone hidden">
           <div className="Number text-black font-mono _Code flex flex-col relative  top-8 list-image-none">
-            <ul className="atalay flex-grow overflow-hidden">
+            <ul className="atalay flex-grow overflow-hidden h-full ">
               <li>
-                <span className="relative  w-full ">
-                  Merhaba! Ben Atlalay Özyıldırım, 22 yaşındayım ve İstanbul da
+                <span className="relative  w-full  ">
+                  Merhaba! Ben Atlalay Özyıldırım, 22 yaşındayım ve İstanbul da{" "}
                   yaşıyorum.
                 </span>
               </li>
@@ -173,7 +173,7 @@ export default function Cv() {
                 <span className="relative top-2  m">{"Türkçe (Ana dil)"}</span>
               </li>
               <li>
-                <span className="relative  top-2 ">
+                <span className="relative">
                   {"İngilizce (Profesyonel çalışma yetkinliği)   "}
                 </span>
               </li>

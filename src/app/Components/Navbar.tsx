@@ -19,7 +19,7 @@ export default function Navbar() {
     });
   };
   return (
-    <div className="w-1/3 h-10 hover:border-2 flex justify-center items-center m-auto p-6 navbar  text-black  rounded-3xl transition-all ease-in-out duration-500 bg-transparent  hover:shadow-md hover:text-black md:m-auto sm:-auto">
+    <div className="w-1/3 h-10 hover:border-1 flex justify-center items-center m-auto p-6 navbar  text-black  rounded-3xl transition-all ease-in-out duration-500 bg-transparent  hover:shadow-md hover:text-black md:m-auto sm:-auto">
       {pathname !== "/" ? (
         <Link href="/" className="">
           <span className="transition-all  ease-out text-lg cursor-pointer hover:pl-6 hover:pr-6 hover:bg-black hover:text-white hover:rounded-3xl  mr-5">

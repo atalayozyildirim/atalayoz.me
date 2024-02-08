@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Atalay Özyıldırım</title>
+        <title>Atalay Özyıldırım || Blog </title>
       </Head>
       <div>
         <div className="flex min-h-screen min-w-screen flex-col items-center article justify-between p-8">

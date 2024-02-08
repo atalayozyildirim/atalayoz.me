@@ -59,7 +59,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col relative left-2 font-bold _code_280132">
           <span className="text-4xl w-full text ml-2  ">
-            Atalay Özyıldırım{" "}
+            {" Atalay Özyıldırım "}
           </span>
           {pathname === "/about" ? (
             <Cv />

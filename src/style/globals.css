@@ -161,7 +161,7 @@
   ._code_280132 {
     width: 100%;
     position: relative;
-    top: -50px;
+    top: -25px;
 
   }
 
@@ -177,7 +177,6 @@
     position: relative;
     flex-wrap: wrap;
     background-color: transparent;
-    position: relative;
     transition: all 0.1s ease-in-out;
   }
 
@@ -190,6 +189,7 @@
 
   .summer {
     display: none;
+
   }
 
   .phone {
@@ -201,10 +201,15 @@
     margin: 0px;
   }
 
-  .NEBILEYIMBISEYISTEAQ {
+  .moda {
     position: absolute;
+    top: 0px;
+  }
+
+  .NEBILEYIMBISEYISTEAQ {
+    position: relative;
     z-index: 1;
-    top: -10vh;
+    top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -277,6 +282,7 @@
   .selam {
     width: 100%;
     height: 100%;
+    z-index: 100000;
 
   }
 
@@ -298,7 +304,10 @@
   .a {
     padding-top: 10px;
   }
-
+  .navbar:hover {
+    box-shadow: none !important;
+    border: none !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -306,20 +315,6 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
-
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
   }
 }
 
