@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Card(props: {
   title: string;
   description: string;
+  image: string;
   link: string;
 }) {
   return (
@@ -12,7 +13,7 @@ export default function Card(props: {
         <li>
           <a href={props.link} className="card ">
             <Image
-              src="/nft.jpg"
+              src={props.image}
               className="card__image"
               alt="profile-image"
               width={500}

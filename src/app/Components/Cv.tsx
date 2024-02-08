@@ -116,13 +116,13 @@ export default function Cv() {
             <li>
               <span>9</span>
               <span className="relative left-4 top-2 text-white m">
-                Türkçe (Ana dil)
+                {"Türkçe (Ana dil)"}
               </span>
             </li>
             <li>
               <span>10</span>
               <span className="relative left-4  top-2 text-white">
-                İngilizce (Orta seviye)
+                {"İngilizce  (Profesyonel çalışma yetkinliği)"}
               </span>
             </li>
           </ul>
@@ -174,7 +174,7 @@ export default function Cv() {
               </li>
               <li>
                 <span className="relative">
-                  {"İngilizce (Profesyonel çalışma yetkinliği)   "}
+                  {"İngilizce (Profesyonel çalışma yetkinliği)"}
                 </span>
               </li>
             </ul>

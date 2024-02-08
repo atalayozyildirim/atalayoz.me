@@ -14,15 +14,17 @@ export default function Home() {
         <div className="w-full h-6  relative z-10 moda  font-mono">
           <Navbar />
         </div>
-        <main className="flex flex-col  items-center   justify-center p-8">
-          <div className="relative w-full h-60 KADIKOYACIL  flex place-items-center ">
-            <div className="w-full h-96">
-              <Content />
+        <div className="flex flex-col relative -top-36 elf">
+          <main className="flex flex-col  items-center   justify-center p-8">
+            <div className="relative w-full h-60 KADIKOYACIL  flex place-items-center ">
+              <div className="w-full h-96">
+                <Content />
+              </div>
             </div>
+          </main>
+          <div className="font-semibold class-129210  left-2  h-5 ">
+            {String.fromCharCode(169)} Atalay Özyıldırım
           </div>
-        </main>
-        <div className="font-semibold class-129210  left-2  h-5 ">
-          {String.fromCharCode(169)} Atalay Özyıldırım
         </div>
       </div>
     </>

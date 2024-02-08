@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Atalay Özyıldırım",
-  description: "Hi, I'm Atalay Ozyildirim. I'm a software developer.",
+  description:
+    "Atalay Özyıldırım - Experienced software developer specializing in web development with JavaScript, TypeScript, and React. Check out my portfolio to see my projects and experience.",
 };
 
 export default function RootLayout({
@@ -21,14 +22,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name=" robots" content=" index, follow" />
         <meta name="author" content="Atalay Özyıldırım" />
-        <meta
-          name="description"
-          content="Atalay Özyıldırım - Experienced software developer specializing in web development with JavaScript, TypeScript, and React. Check out my portfolio to see my projects and experience."
-        />
-        <meta
-          name="keywords"
-          content="Atalay Özyıldırım, software developer, web development, JavaScript, TypeScript, React, portfolio"
-        />
         <meta property={"og:title"} content={"Atalay Ozyildirim"} />
         <meta
           property={"og:description"}
@@ -47,7 +40,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Atalay Özyıldırım - Experienced software developer specializing in web development with JavaScript, TypeScript, and React. Check out my portfolio to see my projects and experience."
         />
-        <meta name="twitter:image" content="https://atalay.musk/a.png" />
+        <meta name="twitter:image" content="/a.png" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KHT779778H"

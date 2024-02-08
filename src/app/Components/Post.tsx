@@ -28,6 +28,7 @@ export default function Post() {
               return (
                 <Card
                   title={item.title}
+                  image={"/nft.jpg"}
                   description={item.content}
                   key={index}
                   link={`/blog/${item.id}`}
