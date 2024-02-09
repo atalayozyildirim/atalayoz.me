@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Cv() {
   return (
-    <div className="relative 2xl:w-[680px] xl:w-[680px] lg:w-[680px]   _ResponsiveCard bg-[#12181f] rounded-xl h-96  top-5 -left-5 flex flex-col  font-semibold tracking-tight">
+    <div className="relative 2xl:w-[680px] xl:w-[680px] lg:w-[680px] sm:w-[680px] sm:flex-col  _ResponsiveCard bg-[#12181f] rounded-xl h-96  top-5 -left-5 flex flex-col  font-semibold tracking-tight">
       <div className="absolute ezhel">
         <div className="dot flex flex-row relative summer left-4 top-1  ">
           <span className="dot-1"></span>

@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en w-full h-full">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name=" robots" content=" index, follow" />
@@ -31,7 +31,7 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://atalayoz.me" />
         <meta property={"og:type"} content={"website"} />
-        <meta property="og:image" content="/a.png" />
+        <meta property="og:image" content="/atalay.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@atalayozyildirim" />
         <meta name="twitter:creator" content="@atalayozyildirim" />
@@ -40,7 +40,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Atalay Özyıldırım - Experienced software developer specializing in web development with JavaScript, TypeScript, and React. Check out my portfolio to see my projects and experience."
         />
-        <meta name="twitter:image" content="/a.png" />
+        <meta name="twitter:image" content="/atalay.png" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KHT779778H"

@@ -87,7 +87,7 @@ export default function About(props: { title: string; description: string }) {
             )}
           </div>
           <div className="font-semibold  fixed bottom-3  mt-5 kadikoy">
-            {String.fromCharCode(169)} Atalay Özyıldırım
+            {String.fromCharCode(169)} {"Atalay Özyıldırım"}
           </div>
         </div>
       </div>

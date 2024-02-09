@@ -402,14 +402,13 @@
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "MockFlowFont";
   font-size: .8em;
   color: #2e343b;
 }
 
 .card__status {
   font-size: .8em;
-  color: #2e343b;
+  color: black;
 }
 
 .card__description {
@@ -424,7 +423,11 @@
 
 @media screen and (max-width: 450px) {
   .elf {
-    top: 10px;
+    top: -15vh;
   }
-
+}
+@media screen and (max-width: 376px) {
+  .elf {
+    top: 0;
+  }
 }

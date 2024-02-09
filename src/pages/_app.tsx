@@ -6,12 +6,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Atalay Özyıldırım r</title>
+        <title>Atalay Özyıldırım </title>
         <meta
           name="description"
           content="Atalay Özyıldırım - Experienced software developer specializing in web development with JavaScript, TypeScript, and React. Check out my portfolio to see my projects and experience. "
         />
         <meta name="author" content="Atalay Özyıldırım" />
+        <meta name="robots" content="max-snippet:50, max-image-preview:large" />
         <meta
           name={"viewport"}
           content={"width=device-width, initial-scale=1"}

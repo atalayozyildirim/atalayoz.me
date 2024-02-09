@@ -35,7 +35,9 @@ export default function Card(props: {
                 />
                 <div className="card__header-text ">
                   <h3 className="card__title font-semibold">{props.title}</h3>
-                  <span className="card__status font-semibold">1 hour ago</span>
+                  <span className="card__status font-semibold text-black">
+                    1 hour ago
+                  </span>
                 </div>
               </div>
               <p className="card__description text-black">
