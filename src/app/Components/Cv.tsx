@@ -103,8 +103,8 @@ export default function Cv() {
             <li>
               <span>7</span>
               <span className="relative left-4 border-b-2 text-[#ffffff]">
-                Javascript, NodeJS, ReactJS, NextJS, React Native, Typescript,
-                HTML5, SQL
+                C#,Javascript, NodeJS, ReactJS, NextJS, React Native, Typescript,
+                 SQL
               </span>
             </li>
             <li>
@@ -160,8 +160,8 @@ export default function Cv() {
               </li>
               <li>
                 <span className="relative">
-                  Javascript, NodeJS, ReactJS, NextJS, React Native, Typescript,
-                  HTML5, SQL
+                  C#,Javascript, NodeJS, ReactJS, NextJS, React Native, Typescript,
+                  SQL
                 </span>
               </li>
               <li>
