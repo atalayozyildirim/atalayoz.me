@@ -113,7 +113,7 @@ export default function About() {
             </div>
             <div className="flex flex-col w-1/2 h-full flex-grow break-all m-auto  pt-5">
               {toogle ? (
-                status === "unauthenticated" ? (
+                status != "unauthenticated" ? (
                   <div>
                     <div
                       id="alert-border-2"
@@ -166,33 +166,49 @@ export default function About() {
                 ) : (
                   <div className="flex max-w-md flex-col relative top-12 font-mono gap-4 drop-shadow-md">
                     <div>
-                      <div className="mb-2 block">Title</div>
+                      <div className="mb-2 block text-2xl font-bold">Title</div>
                       <input
                         ref={inputRef}
                         id="small"
                         type="text"
-                        className="w-full rounded-xl bg-transparent input text-black outline-none border-2 border-black p-2"
+                        className="w-full  bg-transparent input text-black placeholder-black outline-none focus:border-b-2 focus:border-black transition-all ease-in-out  p-2"
                         placeholder="Title..."
                         onChange={(e) => setInput(e.target.value)}
                       />
                     </div>
                     <div>
-                      <div className="mb-2 block">Content</div>
+                      <div className="mb-2 block font-bold text-2xl">
+                        Content
+                      </div>
                       <textarea
                         ref={textRef}
                         id="comment"
                         placeholder="Leave a comment..."
-                        className="h-60 w-full outline-none rounded-xl bg-transparent text-black border-2 border-black p-2 resize-none"
+                        className="h-96 w-full outline-none rounded-xl placeholder-black bg-transparent text-black  p-2 resize-none"
                         onChange={(e) => setContent(e.target.value)}
                       />
                     </div>
-                    <button
-                      type="button"
-                      onClick={sendRequest}
-                      className="bg-black text-white rounded-full p-2 m-2 drop-shadow-lg border-2 border-black hover:scale-110 transition-all duration-100 "
-                    >
-                      Paylaş
-                    </button>
+                    <div className="absolute right-32 w-full h-full -z-10 ">
+                      <div
+                        onClick={sendRequest}
+                        className="bg-black  p-5 flex w-16 align-middle cursor-pointer hover:rotate-12 transition-all ease-out rounded-full"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="white"
+                          className="w-6 h-6 "
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 )
               ) : null}

@@ -20,7 +20,7 @@ export default function Post() {
   return (
     <>
       <div className="relative">
-        <div className="flex flex-row  ceren">
+        <div className="flex flex-row justify-center  ceren">
           {loading ? (
             <Loading />
           ) : (
