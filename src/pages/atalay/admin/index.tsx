@@ -7,7 +7,7 @@ import Image from "next/image";
 import Head from "next/head";
 import "../../../style/globals.css";
 import NextAuthProvider from "@/app/NextAuth";
-
+// aşk olsun anlamadım taş gibi oldu kalbim başakası anlamadı
 export default function About() {
   const [toogle, setToogle] = useState(false);
   const [input, setInput] = useState("");
