@@ -113,7 +113,7 @@ export default function About() {
             </div>
             <div className="flex flex-col w-1/2 h-full flex-grow break-all m-auto  pt-5">
               {toogle ? (
-                status != "unauthenticated" ? (
+                status === "unauthenticated" ? (
                   <div>
                     <div
                       id="alert-border-2"
